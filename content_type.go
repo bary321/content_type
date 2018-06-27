@@ -1,5 +1,7 @@
 package content_type
 
+import "strings"
+
 var mimemaps = map[string]string{
 	".3gp":         "video/3gp",
 	".wmv":         "video/x-ms-wmv",
@@ -552,6 +554,7 @@ var mimemaps = map[string]string{
 }
 
 func GetContentType(ext string) string {
+	ext = strings.ToLower(ext)
 	v, found := mimemaps[ext]
 	if found {
 		return v
