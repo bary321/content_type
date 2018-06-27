@@ -542,9 +542,13 @@ var mimemaps = map[string]string{
 	".oex":         "application/x-opera-extension",
 	".mustache":    "text/html",
 	".ts" : "video/MP2T",
-	"m3u8": "application/x-mpegURL",
-	"heic": "image/heic",
-	"heif": "image/heif",
+	".m3u8": "application/x-mpegURL",
+	".heic": "image/heic",
+	".heif": "image/heif",
+	".net":"image/pnetvue",
+	".fax": "image/fax",
+	".wvx": "video/x-ms-wvx",
+	".wmx": "video/x-ms-wmx",
 }
 
 func GetContentType(ext string) string {
